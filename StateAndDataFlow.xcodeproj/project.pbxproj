@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		95C9F0B628380B560030B6E3 /* UserDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C9F0B528380B560030B6E3 /* UserDataManager.swift */; };
 		A8EA88B0283566FE005934B6 /* StateAndDataFlowApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EA88AF283566FE005934B6 /* StateAndDataFlowApp.swift */; };
 		A8EA88B2283566FE005934B6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EA88B1283566FE005934B6 /* ContentView.swift */; };
 		A8EA88B4283566FF005934B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8EA88B3283566FF005934B6 /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		95C9F0B528380B560030B6E3 /* UserDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataManager.swift; sourceTree = "<group>"; };
 		A8EA88AC283566FE005934B6 /* StateAndDataFlow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StateAndDataFlow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8EA88AF283566FE005934B6 /* StateAndDataFlowApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateAndDataFlowApp.swift; sourceTree = "<group>"; };
 		A8EA88B1283566FE005934B6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 				A8EA88C3283575E2005934B6 /* StarterView.swift */,
 				A8EA88BD28356B37005934B6 /* TimeCounter.swift */,
 				A8EA88C1283572FD005934B6 /* UserManager.swift */,
+				95C9F0B528380B560030B6E3 /* UserDataManager.swift */,
 				A8EA88B3283566FF005934B6 /* Assets.xcassets */,
 				A8EA88B5283566FF005934B6 /* Preview Content */,
 			);
@@ -149,6 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95C9F0B628380B560030B6E3 /* UserDataManager.swift in Sources */,
 				A8EA88BE28356B37005934B6 /* TimeCounter.swift in Sources */,
 				A8EA88C0283571B3005934B6 /* RegisterView.swift in Sources */,
 				A8EA88C4283575E2005934B6 /* StarterView.swift in Sources */,

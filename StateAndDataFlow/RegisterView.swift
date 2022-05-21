@@ -13,8 +13,8 @@ struct RegisterView: View {
     @State private var textColor = Color.red
     @State private var buttonToggle = true
     
-    @AppStorage("name") private var name = ""
-    @AppStorage("isRegistered") private var isRegistered = false
+    @AppStorage(UserDataManager.shared.name) private var name = ""
+    @AppStorage(UserDataManager.shared.isRegistered) private var isRegistered = false
     
     var body: some View {
         VStack {

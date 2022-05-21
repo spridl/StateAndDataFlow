@@ -13,7 +13,7 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            Text("Hi, \(user.name ?? "No Name")")
+            Text("Hi, \(user.name)")
                 .font(.largeTitle)
                 .padding(.top, 80)
             Text("\(timer.counter)")
@@ -58,8 +58,8 @@ struct LogoutButtonView: View {
     
     @EnvironmentObject private var user: UserManager
     
-    @AppStorage("name") private var name: String?
-    @AppStorage("isRegistered") private var isRegistered: Bool?
+    @AppStorage(UserDataManager.shared.name) private var name: String?
+    @AppStorage(UserDataManager.shared.isRegistered) private var isRegistered: Bool?
     
     var body: some View {
         Button(action: logOutButtonPressed) {
@@ -78,7 +78,7 @@ struct LogoutButtonView: View {
     
     private func logOutButtonPressed() {
         user.name = ""
-        name = user.name ?? "No name"
+        name = user.name
         user.isRegistered.toggle()
         isRegistered = user.isRegistered
     }

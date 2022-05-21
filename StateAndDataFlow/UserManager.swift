@@ -8,6 +8,6 @@
 import Foundation
 
 final class UserManager: ObservableObject {
-    @Published var isRegistered = UserDefaults.standard.bool(forKey: "isRegistered")
-    var name = UserDefaults.standard.string(forKey: "name")
+    @Published var isRegistered = UserDataManager.shared.fetchDataRegistered()
+    var name = UserDataManager.shared.fetchName()
 }
